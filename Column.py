@@ -5,7 +5,8 @@ import streamlit as st
 import Column_Examples as ex
 # import streamlit_nested_layout  # nested columns
 import pandas as pd, numpy as np
-import matplotlib.pyplot as plt, matplotlib.patches as patches
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 # from streamlit_message import message
 # from io import BytesIO
 
