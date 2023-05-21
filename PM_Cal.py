@@ -171,10 +171,11 @@ def Cal(In):
             elif z1 == 6-1:
                 if Pn[4-1] > 0:          #! Pn(4-1) : D, Balance Point > 0일때 구할수 없고(식이 없음), 직선 보간 한다
                     P = 0
-                    M = Pn8*(Mn[4-1] - Mn8)/(Pn8 + Pn[4-1])
+                    # M = Pn8*(Mn[4-1] - Mn8)/(Pn8 + Pn[4-1])
+                    M = Mn[4-1] - Pn[4-1]*(Mn[4-1] - Mn8)/(Pn[4-1] - Pn8)
                     c = cc[4-1]*0.9
                     pass
-                elif Pn[4-1] < 0:        #! Pn(4-1) : D, Balance Point < 0일때 F(Pn=0)점을 계산으로 구할수 있다.
+                elif Pn[4-1] <= 0:        #! Pn(4-1) : D, Balance Point < 0일때 F(Pn=0)점을 계산으로 구할수 있다.
                     if 'Rectangle' in Section_Type:
                         for k3 in [1, 2, 3]:
                             for k1 in np.arange(1, iter):
