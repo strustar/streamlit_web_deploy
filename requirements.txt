@@ -1,7 +1,4 @@
-matplotlib==3.6.3
-numpy==1.24.1
+streamlit==1.23.1
+numpy==1.24.3
 pandas==1.5.3
-streamlit==1.18.1
-streamlit-message==0.0.1
-streamlit-nested-layout==0.1.1
-altair==4
+plotly==5.15.0
